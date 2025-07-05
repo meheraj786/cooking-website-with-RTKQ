@@ -3,3 +3,9 @@
 
 /* font-family: "Montserrat", sans-serif;
 font-family: "Montez", cursive; */
+
+@theme{
+  --color-primary: #84BD00;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Montez", cursive;
+}

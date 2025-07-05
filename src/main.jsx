@@ -8,12 +8,19 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router";
+import Home from './page/Home.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    children:[
+      {
+        index: true,
+        Component: Home,
+      }
+    ]
   },
 ]);
 
