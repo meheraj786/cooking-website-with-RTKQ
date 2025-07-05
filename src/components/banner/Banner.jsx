@@ -19,9 +19,9 @@ const Banner = () => {
     backgroundPosition: 'center',
   }}>
 <Container>
-  <div className="text-center text-white w-[30%]">
-    <h1 className='text-[60px] font-primary font-bold'>{meals[0].strMeal}</h1>
-    <Link to={`/food/${meals[0].idMeal}`} className='px-[70px] border border-white mt-5 text-[30px] cursor-pointer'>View</Link>
+  <div className="text-center border p-10 rounded-2xl backdrop-blur-sm text-white w-[30%]">
+    <h1 className='text-[60px] mb-6  font-primary font-bold'>{meals[0].strMeal}</h1>
+    <Link to={`/food/${meals[0].idMeal}`} className='px-[70px] border border-white text-[30px] cursor-pointer'>View</Link>
   </div>
 </Container>
     </div>
