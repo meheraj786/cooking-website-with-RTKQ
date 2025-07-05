@@ -17,8 +17,14 @@ endpoints: (build)=>({
   getRecipeByArea: build.query({
     query: (area)=>`filter.php?a=${area}`
   }),
+  getRecipeByCategories: build.query({
+    query: ()=>`categories.php`
+  }),
+  getRecipeByCategory: build.query({
+    query: (category)=>`filter.php?c=${category}`
+  }),
 })
 })
 
 
-export const { useGetRecipeByNameQuery } = recipeApiSlice
+export const { useGetRecipeByNameQuery, useGetRecipeByAreaQuery, useGetRecipeByCategoriesQuery, useGetRecipeByCategoryQuery, useGetRecipeByIdQuery, useGetRecipeRandomQuery } = recipeApiSlice

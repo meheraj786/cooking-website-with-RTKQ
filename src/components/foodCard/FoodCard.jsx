@@ -4,7 +4,7 @@ const FoodCard = ({ food }) => {
   return (
     <div className="w-[32%] bg-white border border-gray-200 rounded-lg shadow-sm">
       <a href="#">
-        <img className="rounded-t-lg w-full h-88 object-cover" src={food?.strMealThumb} alt={food?.strMeal} />
+        <img className="rounded-t-lg w-full h-68 object-cover" src={food?.strMealThumb} alt={food?.strMeal} />
       </a>
       <div className="p-5">
         <a href="#">

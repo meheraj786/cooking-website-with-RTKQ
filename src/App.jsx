@@ -2,9 +2,7 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/banner/Banner";
-import FirstRow from "./components/firstRow/FirstRow";
-import SecondRow from "./components/secondRow/SecondRow";
-import ThirdRow from "./components/thirdRow/ThirdRow";
+
 import Footer from "./components/footer/Footer";
 import { Outlet } from "react-router";
 
