@@ -65,6 +65,8 @@ style={{
 }}
 
 
+
+
               >
                 <div className="w-full h-full bg-black/40 absolute top-0 left-0 group-hover:bg-black/20 transition"></div>
                 <h3 className="relative text-white text-2xl font-bold p-4">
