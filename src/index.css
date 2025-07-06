@@ -9,3 +9,6 @@ font-family: "Montez", cursive; */
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Montez", cursive;
 }
+.slick-slide {
+  padding: 0 12px;
+}

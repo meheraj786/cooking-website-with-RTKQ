@@ -3,6 +3,7 @@ import Container from '../../layouts/Container'
 import Flex from '../../layouts/Flex'
 import FoodCard from '../foodCard/FoodCard'
 import { useGetRecipeByCategoryQuery } from '../../features/api/recipeApiSlice'
+import SliderItems from '../slider/SliderItems'
 
 const FirstRow = () => {
 const { data, isLoading, error } = useGetRecipeByCategoryQuery("Chicken");
@@ -18,9 +19,7 @@ const meals = data?.meals || [];
       <Container>
         <h2 className='text-[45px] mb-4 font-secondary text-primary font-semibold'>Chicken</h2>
         <Flex>
-          <FoodCard food={meals[0]}/>
-          <FoodCard food={meals[1]}/>
-          <FoodCard food={meals[2]}/>
+          <SliderItems items={meals.slice(0,6)}/>
         </Flex>
       </Container>
     </div>
