@@ -10,6 +10,7 @@ import {
 } from "react-router";
 import Home from './page/Home.jsx'
 import FoodPage from './page/FoodPage.jsx'
+import AllFoodPage from './page/AllFoodPage.jsx'
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/food/:id",
         Component: FoodPage
+      },
+      {
+        path: "/foods/:name",
+        Component: AllFoodPage
       }
     ]
   },

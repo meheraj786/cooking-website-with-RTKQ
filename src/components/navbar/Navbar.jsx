@@ -5,9 +5,9 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white border-gray-200 text-black">
+    <nav className=" fixed w-full z-[999] border-gray-200 text-black">
       <Container>
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl bg-white border border-gray-400 rounded-[80px] flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"

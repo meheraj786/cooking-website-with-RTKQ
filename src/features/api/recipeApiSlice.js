@@ -23,8 +23,11 @@ endpoints: (build)=>({
   getRecipeByCategory: build.query({
     query: (category)=>`filter.php?c=${category}`
   }),
+  getAllRecipeAreas: build.query({
+  query: () => `list.php?a=list`
+})
 })
 })
 
 
-export const { useGetRecipeByNameQuery, useGetRecipeByAreaQuery, useGetRecipeByCategoriesQuery, useGetRecipeByCategoryQuery, useGetRecipeByIdQuery, useGetRecipeRandomQuery } = recipeApiSlice
+export const { useGetRecipeByNameQuery, useGetRecipeByAreaQuery, useGetRecipeByCategoriesQuery, useGetRecipeByCategoryQuery, useGetRecipeByIdQuery, useGetRecipeRandomQuery, useGetAllRecipeAreasQuery } = recipeApiSlice
