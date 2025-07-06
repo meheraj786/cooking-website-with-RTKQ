@@ -11,6 +11,7 @@ import {
 import Home from './page/Home.jsx'
 import FoodPage from './page/FoodPage.jsx'
 import AllFoodPage from './page/AllFoodPage.jsx'
+import AllFoodByArea from './page/AllFoodByArea.jsx'
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,11 @@ const router = createBrowserRouter([
       {
         path: "/foods/:name",
         Component: AllFoodPage
-      }
+      },
+      {
+        path: "/area/:area",
+        Component: AllFoodByArea
+      },
     ]
   },
 ]);
