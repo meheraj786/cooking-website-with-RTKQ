@@ -1,6 +1,5 @@
 import React from 'react'
 import Container from '../../layouts/Container'
-
 import { Link } from 'react-router';
 import { useGetRecipeRandomQuery } from '../../features/api/recipeApiSlice';
 
