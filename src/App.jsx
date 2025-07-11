@@ -7,6 +7,7 @@ import { Outlet } from "react-router";
 import AllFoodPage from "./page/AllFoodPage";
 import AllFoodCategories from "./page/AllFoodCategories";
 
+
 function App() {
   return (
     <>
