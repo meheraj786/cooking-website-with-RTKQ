@@ -5,37 +5,37 @@ import Container from "../layouts/Container";
 
 const AllFoodAreas = () => {
  const areaImages = {
-  American: "https://source.unsplash.com/500x300/?american,food",
-  British: "https://source.unsplash.com/500x300/?british,food",
-  Canadian: "https://source.unsplash.com/500x300/?canadian,food",
-  Chinese: "https://source.unsplash.com/500x300/?chinese,food",
-  Croatian: "https://source.unsplash.com/500x300/?croatian,food",
-  Dutch: "https://source.unsplash.com/500x300/?dutch,food",
-  Egyptian: "https://source.unsplash.com/500x300/?egyptian,food",
-  Filipino: "https://source.unsplash.com/500x300/?filipino,food",
-  French: "https://source.unsplash.com/500x300/?french,food",
-  Greek: "https://source.unsplash.com/500x300/?greek,food",
-  Indian: "https://source.unsplash.com/500x300/?indian,food",
-  Irish: "https://source.unsplash.com/500x300/?irish,food",
-  Italian: "https://source.unsplash.com/500x300/?italian,food",
-  Jamaican: "https://source.unsplash.com/500x300/?jamaican,food",
-  Japanese: "https://source.unsplash.com/500x300/?japanese,food",
-  Kenyan: "https://source.unsplash.com/500x300/?kenya,food",
-  Malaysian: "https://source.unsplash.com/500x300/?malaysia,food",
-  Mexican: "https://source.unsplash.com/500x300/?mexican,food",
-  Moroccan: "https://source.unsplash.com/500x300/?moroccan,food",
-  Polish: "https://source.unsplash.com/500x300/?polish,food",
-  Portuguese: "https://source.unsplash.com/500x300/?portugal,food",
-  Russian: "https://source.unsplash.com/500x300/?russian,food",
-  Spanish: "https://source.unsplash.com/500x300/?spanish,food",
-  Thai: "https://source.unsplash.com/500x300/?thai,food",
-  Tunisian: "https://source.unsplash.com/500x300/?tunisian,food",
-  Turkish: "https://source.unsplash.com/500x300/?turkish,food",
-  Vietnamese: "https://source.unsplash.com/500x300/?vietnamese,food"
+  American: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=300&fit=crop",
+  British: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&h=300&fit=crop",
+  Canadian: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&h=300&fit=crop",
+  Chinese: "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500&h=300&fit=crop",
+  Croatian: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Dutch: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=300&fit=crop",
+  Egyptian: "https://images.unsplash.com/photo-1599020792689-9c52c796acb8?w=500&h=300&fit=crop",
+  Filipino: "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=500&h=300&fit=crop",
+  French: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=500&h=300&fit=crop",
+  Greek: "https://images.unsplash.com/photo-1539136788836-5699e78bfc75?w=500&h=300&fit=crop",
+  Indian: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&h=300&fit=crop",
+  Irish: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&h=300&fit=crop",
+  Italian: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Jamaican: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=300&fit=crop",
+  Japanese: "https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=500&h=300&fit=crop",
+  Kenyan: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=500&h=300&fit=crop",
+  Malaysian: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Mexican: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Moroccan: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&h=300&fit=crop",
+  Polish: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Portuguese: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Russian: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Spanish: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Thai: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&h=300&fit=crop",
+  Tunisian: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+  Turkish: "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500&h=300&fit=crop",
+  Vietnamese: "https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&h=300&fit=crop"
 };
 
 const getImageForArea = (areaName) =>
-  areaImages[areaName] || `https://source.unsplash.com/500x300/?${areaName},food`;
+  areaImages[areaName] || `https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop`;
 
 
   const { data, isLoading, error } = useGetAllRecipeAreasQuery();
@@ -60,13 +60,9 @@ const getImageForArea = (areaName) =>
             <Link to={`/area/${area.strArea}`} key={index}>
               <div
                 className="rounded-xl shadow-lg overflow-hidden relative group h-[200px] flex items-end justify-start bg-cover bg-center cursor-pointer transition-transform duration-300 hover:scale-105"
-style={{
-  backgroundImage: `url(${getImageForArea(area.strArea) || '/fallback.jpg'})`
-}}
-
-
-
-
+                style={{
+                  backgroundImage: `url(${getImageForArea(area.strArea) || '/fallback.jpg'})`
+                }}
               >
                 <div className="w-full h-full bg-black/40 absolute top-0 left-0 group-hover:bg-black/20 transition"></div>
                 <h3 className="relative text-white text-2xl font-bold p-4">

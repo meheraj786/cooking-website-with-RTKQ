@@ -25,7 +25,7 @@ const FoodPage = () => {
 
 
   return (
-    <div className="max-w-4xl font-primary mx-auto my-10 p-5 bg-white rounded shadow-md">
+    <div className="max-w-4xl font-primary mx-auto my-10 pt-10 p-5 bg-white rounded shadow-md">
       <img src={meal.strMealThumb} alt={meal.strMeal} className="w-full h-[400px] object-cover rounded-md mb-6" />
       <h2 className="text-3xl font-bold text-gray-800 mb-2">{meal.strMeal}</h2>
       <p className="text-gray-600 mb-1">Category: <span className="font-semibold">{meal.strCategory}</span></p>

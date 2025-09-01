@@ -12,7 +12,7 @@ const Banner = () => {
   const meals = data?.meals || [];
   console.log(meals);
   return (
-    <div className='py-[120px] pt-[200px] bg-[url(assets/bannerImg.png)] bg-center bg-cover'   style={{
+    <div className='py-[120px] pt-[200px] bg-[url(assets/bannerImg.png)] bg-center bg-cover h-[80vh]'   style={{
     backgroundImage: `url(${meals[0].strMealThumb})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
